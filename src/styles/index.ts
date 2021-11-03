@@ -1,5 +1,6 @@
+import { vertical, horizontal } from "./shapes";
 
-const theme = {
+const style = {
   colors: {
     textPrimary: '#24292e',
     textSecondary: '#586069',
@@ -44,6 +45,27 @@ const theme = {
     padding: 10,
     margin: 5
   },
+
+  navbar: {
+    ...vertical,
+    padding:20,
+    width: "75%",
+  },
+
+  navbarText: {
+    padding: 10,
+  },
+
+  CVlist: {
+    ...horizontal,
+    margin: 3,
+  },
+
+  CVitemBar: {
+    ...vertical,
+  }
+
+  
 };
 
-export default theme;
+export default style;
