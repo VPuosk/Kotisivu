@@ -1,17 +1,16 @@
 const flexGeneric = {
   display: "flex",
   flex: 1,
-  margin: 10,
 }
 
 export const vertical = {
   ...flexGeneric,
-  "flex-direction": "row",
+  flexDirection: 'row' as const,
   backgroundColor: '#FEE',
 }
 
 export const horizontal = {
   ...flexGeneric,
-  "flex-direction": "column",
+  flexDirection: 'column' as const,
   backgroundColor: '#EFE',
 }

@@ -2,6 +2,8 @@ import React from "react";
 import { opinnot as HYopinnot } from "./HYopinnot";
 import style from "../styles";
 import { PageText } from "../components/generic/PageText";
+import CVNavBar from "./CVNavBar";
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 
 type Kurssitiedot = {
   kurssi: string;
@@ -40,11 +42,22 @@ const HY = () => {
 }
 
 const CVPage = () => {
+  const { path } = useRouteMatch();
 
   return (
     <div>
-      <HY />
-      Work-In-Progress
+      <CVNavBar />
+      <Switch>
+        <Route exact path={path}>
+          ETUSIVU CVPUOLI
+        </Route>
+        <Route path={`${path}/HY`}>
+          <HY />
+        </Route>
+        <Route path={`${path}/Muut`}>
+          Muut
+        </Route>
+      </Switch>
     </div>
   )
 }
