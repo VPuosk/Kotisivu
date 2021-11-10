@@ -1,3 +1,7 @@
+import React from "react";
+import { PageText } from "../components/generic/PageText";
+import style from "../styles";
+
 export const opinnot = [
   {
     kurssi: "Ohjelmoinnit perusteet",
@@ -192,3 +196,46 @@ export const opinnot = [
     suoritusaika: "2021-08"
   },
 ]
+
+type Kurssitiedot = {
+  kurssi: string;
+  kieli: string;
+  laajuus: number;
+  suoritusaika: string;
+}
+
+interface KurssiPropsi {
+  kurssinTiedot: Kurssitiedot,
+}
+
+const Opinto = ({ kurssinTiedot }: KurssiPropsi) => {
+  return (
+    <>
+      <PageText style={{ width: "60%" }}>{kurssinTiedot.kurssi}</PageText>
+      <PageText style={{ width: "15%" }}>{kurssinTiedot.kieli}</PageText>
+      <PageText style={{ width: "5%" }}>{kurssinTiedot.laajuus}</PageText>
+      <PageText style={{ width: "20%" }}>{kurssinTiedot.suoritusaika}</PageText>
+    </>
+  )
+}
+
+const HYopinnot = () => {
+  return (
+    <div style={style.CVlist}>
+      <div style={style.CVitemHeader}>
+        <PageText style={{ width: "60%" }}>Kurssi</PageText>
+        <PageText style={{ width: "15%" }}>Kieli</PageText>
+        <PageText style={{ width: "5%" }}>OP</PageText>
+        <PageText style={{ width: "20%" }}>Suoritettu</PageText>
+      </div>
+      <hr style={style.CVHR}  />
+      {opinnot.map(kurssi =>
+        <div key={kurssi.kurssi} style={style.CVitemBar}>
+          <Opinto kurssinTiedot={kurssi} />
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default HYopinnot

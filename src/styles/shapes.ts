@@ -6,11 +6,11 @@ const flexGeneric = {
 export const vertical = {
   ...flexGeneric,
   flexDirection: 'row' as const,
-  backgroundColor: '#FEE',
+  //backgroundColor: '#FEE',
 }
 
 export const horizontal = {
   ...flexGeneric,
   flexDirection: 'column' as const,
-  backgroundColor: '#EFE',
+  //backgroundColor: '#EFE',
 }

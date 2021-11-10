@@ -8,10 +8,14 @@ const NavBar = () => {
   return (
     <div style={style.navbar} >
       <Link to="/">
-        <PageText style={style.navbarText}>Homepage</PageText>
+        <button style={style.navbarButton}>
+          <PageText style={style.navbarText}>Homepage</PageText>
+        </button>
       </Link>
       <Link to="/CV">
-        <PageText style={style.navbarText}>TEST</PageText>
+        <button style={style.navbarButton}>
+          <PageText style={style.navbarText}>TEST</PageText>
+        </button>
       </Link>
     </div>
   );

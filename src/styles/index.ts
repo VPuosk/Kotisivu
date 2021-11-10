@@ -1,4 +1,5 @@
 import { vertical, horizontal } from "./shapes";
+import { colors } from "./colors";
 
 const style = {
   colors: {
@@ -48,26 +49,59 @@ const style = {
 
   navbar: {
     ...vertical,
-    padding:20,
-    width: "75%",
+    padding:10,
+    width: '700px',
     borderRadius: '5% / 50%',
     borderStyle: 'solid',
     borderColor: 'rgb(100,100,255)',
     background: 'rgba(220,220,255,0.65)'
     //backgroundImage: "linear-gradient(to right, rgba(220,220,255,1) 50%, rgba(20,20,155,0))",
   },
+  
+  navbarButton: {
+    padding: 2,
+    margin: 5,
+    width: '120px', // jotta tuo borderRadius toimisi oikein...
+    background: 'rgba(200,200,255,0.95)',
+    borderRadius: '10% / 50%'
+  },
 
   navbarText: {
-    padding: 10,
+    padding: 5,
+    fontSize: '1.35em',
   },
 
   CVlist: {
     ...horizontal,
     margin: 3,
+    paddingLeft: 40,
+    width: '650px',
+    borderStyle: 'solid',
+    borderColor: colors.CVBorderColor,
+    background: colors.CVBackgroundColor,
   },
 
   CVitemBar: {
     ...vertical,
+  },
+
+  CVitemHeader: {
+    ...vertical,
+    fontSize: '1.25em',
+  },
+
+  CVHR: {
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: colors.CVBorderColor
+  },
+
+  muutOhjelmointiPalkki: {
+    ...horizontal
+  },
+
+  muutOhjelmointiRivi: {
+    ...vertical
   },
 
   backgroundImage: {
@@ -81,7 +115,7 @@ const style = {
   backgroundFilter: {
     height: '100%',
     width: '100%',
-    backgroundColor: 'rgba(240, 240, 255, 0.7)',
+    backgroundColor: colors.BackgroundImageFilter,
   }
   
 };

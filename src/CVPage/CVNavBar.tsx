@@ -10,16 +10,24 @@ const CVNavBar = () => {
     <div style={{padding:10}}>
       <div style={style.navbar} >
         <Link to="/CV">
-          <PageText style={style.navbarText}>Curriculum Vitae</PageText>
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Minä</PageText>
+          </ button>
         </Link>
         <a href={pdffillet} rel="noopener noreferrer" target="_blank">
-          <PageText style={style.navbarText}>CV - pdf</PageText>
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>CV - pdf</PageText>
+          </button>
         </a>
         <Link to="/CV/HY">
-          <PageText style={style.navbarText}>Ohjelmointia - HY</PageText>
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>CS opintoja</PageText>
+          </button>
         </Link>
         <Link to="/CV/Muut">
-          <PageText style={style.navbarText}>Ohjelmointia - Muut</PageText>
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Ohjelmointia</PageText>
+          </button>
         </Link>
       </div>
     </div>
