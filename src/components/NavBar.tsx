@@ -7,14 +7,14 @@ const NavBar = () => {
 
   return (
     <div style={style.navbar} >
-      <Link to="/">
-        <button style={style.navbarButton}>
-          <PageText style={style.navbarText}>Homepage</PageText>
-        </button>
-      </Link>
       <Link to="/CV">
         <button style={style.navbarButton}>
-          <PageText style={style.navbarText}>TEST</PageText>
+          <PageText style={style.navbarText}>Omat tiedot</PageText>
+        </button>
+      </Link>
+      <Link to="/">
+        <button style={style.navbarButton}>
+          <PageText style={style.navbarText}>Demoja</PageText>
         </button>
       </Link>
     </div>
