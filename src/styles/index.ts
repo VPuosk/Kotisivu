@@ -83,6 +83,7 @@ const style = {
 
   CVitemBar: {
     ...vertical,
+    marginBottom: 5,
   },
 
   CVitemHeader: {
@@ -97,19 +98,33 @@ const style = {
   },
 
   muutOhjelmointiPalkki: {
-    ...horizontal
+    ...horizontal,
+    marginBottom: 5,
   },
 
   muutOhjelmointiRivi: {
     ...vertical
   },
 
+  tekstiLaatikko: {
+    padding: 20,
+    margin:10,
+    background: colors.TekstilaatikonTausta,
+  },
+
+  otsikkoTeksti: {
+    margin:20,
+    fontWeight:600,
+    fontSize: '1.5em'
+  },
+
   backgroundImage: {
     backgroundImage: `url(/Ruissalo_06m.jpg)`,
-    height: '100vh',
+    //height: '100vh',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
   },
 
   backgroundFilter: {

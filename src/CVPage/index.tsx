@@ -1,8 +1,9 @@
 import React from "react";
-import HYopinnot from "./HYopinnot";
+import YOopinnot from "./YOopinnot";
 import CVNavBar from "./CVNavBar";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import MuutOpinnot from "./MuutOpinnot";
+import OmaSivu from "./OmaSivu";
 
 const CVPage = () => {
   const { path } = useRouteMatch();
@@ -12,10 +13,10 @@ const CVPage = () => {
       <CVNavBar />
       <Switch>
         <Route exact path={path}>
-          ETUSIVU CVPUOLI
+          <OmaSivu />
         </Route>
         <Route path={`${path}/HY`}>
-          <HYopinnot />
+          <YOopinnot />
         </Route>
         <Route path={`${path}/Muut`}>
           <MuutOpinnot />

@@ -7,7 +7,7 @@ import pdffillet from '../static/CV_Vesa_Puoskari_2021_uusi.pdf';
 
 const CVNavBar = () => {
   return (
-    <div style={{padding:10}}>
+    <div style={{marginTop:10}}>
       <div style={style.navbar} >
         <Link to="/CV">
           <button style={style.navbarButton}>
@@ -21,12 +21,17 @@ const CVNavBar = () => {
         </a>
         <Link to="/CV/HY">
           <button style={style.navbarButton}>
-            <PageText style={style.navbarText}>CS opintoja</PageText>
+            <PageText style={style.navbarText}>Opintoja</PageText>
           </button>
         </Link>
         <Link to="/CV/Muut">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Ohjelmointia</PageText>
+          </button>
+        </Link>
+        <Link to="/CV/Kuvia">
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Kuvia</PageText>
           </button>
         </Link>
       </div>
