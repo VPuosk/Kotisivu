@@ -8,19 +8,43 @@ const omaKertomus : string[] = [
   "Tämä jätti gradun kuin limboon. Etenkin kun tähän liittyvä erikoistyö ei varsinaisesti tuottanut toivottua tulosta - tämä tosin johtui ohjaajien oletuksista jotka eivät toteutuneet. Tällä välin opettelin itse ohjelmoimaan, tein keikkatöitä 'firaabelina' turvakameroiden asennuksessa ja tietokoneiden asentamisessa. Palasin kuitenkin aina takaisin tuohon graduun, mutta sen saaminen valmiiksi oli uskottamattoman vaikeaa. Lopulta pakotin itseni kohtaamaan tuon ja tein kaikki lopputentit ennen gradun lopullista kirjoittamista. Asian osaamisesta ei mikään ollut kiinni, lopputentit menivät läpi arvosanoilla 5/5, 5/5 ja 4/5. Gradukin valmistui lopulta nopeasti tämän jälkeen.",
 ]
 
+const omaKuvaus : string[] = [
+  "Olen tietotekniikasta ja tietojenkäsittelystä kiinnostunut vuonna 1981 syntynyt elintarvikekemian maisteri. Luonteeltani olen rauhallinen, harkitsevainen, ja tulen helposti toimeen muidan kanssa. Olen innokas oppimaan uutta etenkin tietotekniikan alalta.",
+  "Harrastan pelaamista (ei kilpamielessä), lukemista, sekä ulkoilua niin kävellen kuin pyöräillenkin.",
+  "Osaan käyttää tavanomaisia toimisto-ohjelmia tehokkaasti. Osaan perusteet kuvankäsittelystä ja 3D-mallinnuksesta. Olen käyttänyt pääosin Windows koneita, mutta olen myös tutustunut Linux:n toimintaan (Ubuntu). Ymmärrän webbisivujen rakentamisen perusteet (HTML, CSS ja JS). Olen myös tutustunut konttiteknologioihin (Docker). Olen ohjelmoinut joko omaan käyttöön tai osana opintoja useilla eri ohjelmointikielillä (Basic, Visual Basic, Java, Python, Lua, C, C++, C#, Haskell, JavaScript (mm. React, TypeScript, GraphQL)."
+]
+
 const OmaSivu = () => {
+  //<a href="https://www.dropbox.com/s/mtnkna4rwp1cllz/Ruissalo_02.jpg?raw=1" alt="Luminen ja jäinen maisemakuva, Ruissalo." target="_blank">
+  //              <img src="https://www.dropbox.com/s/mtnkna4rwp1cllz/Ruissalo_02.jpg?raw=1" height=150 width=200 class="img-thumbnail" >
+  //</a>
 
   return (
-    <div style={{padding:10}}>
-      <div style={style.otsikkoTeksti}>
-          <PageText>Miksi tiedoissa on iso aukko?</PageText>
-      </div>
-      {omaKertomus.map(osio =>
-        <div style={style.tekstiLaatikko} key={osio}>
-          <PageText>{osio}</PageText>
+    <div>
+      <div style={{padding:10}}>
+        <div style={style.otsikkoTeksti}>
+          <PageText>Omakuvaus</PageText>
         </div>
-      )}
-    </div> 
+        {omaKuvaus.map(osio =>
+          <div style={style.tekstiLaatikko} key={osio}>
+            <PageText>{osio}</PageText>
+          </div>
+        )}
+      </div>
+      <div style={style.kuvapalkki}>
+        <img src="https://www.dropbox.com/s/sdz4az83wz3edx2/omakuva.jpg?raw=1" style={style.kuvaKoivuAsetin} alt="omakuva" />
+      </div>
+      <div style={{padding:10}}>
+        <div style={style.otsikkoTeksti}>
+            <PageText>Miksi tiedoissa on iso aukko?</PageText>
+        </div>
+        {omaKertomus.map(osio =>
+          <div style={style.tekstiLaatikko} key={osio}>
+            <PageText>{osio}</PageText>
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
 

@@ -4,6 +4,7 @@ import CVNavBar from "./CVNavBar";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import MuutOpinnot from "./MuutOpinnot";
 import OmaSivu from "./OmaSivu";
+import LuontoKuvat from "./LuontoKuvat";
 
 const CVPage = () => {
   const { path } = useRouteMatch();
@@ -20,6 +21,9 @@ const CVPage = () => {
         </Route>
         <Route path={`${path}/Muut`}>
           <MuutOpinnot />
+        </Route>
+        <Route path={`${path}/Kuvat`}>
+          <LuontoKuvat />
         </Route>
       </Switch>
     </div>

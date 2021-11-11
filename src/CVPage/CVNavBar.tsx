@@ -29,7 +29,7 @@ const CVNavBar = () => {
             <PageText style={style.navbarText}>Ohjelmointia</PageText>
           </button>
         </Link>
-        <Link to="/CV/Kuvia">
+        <Link to="/CV/Kuvat">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Kuvia</PageText>
           </button>

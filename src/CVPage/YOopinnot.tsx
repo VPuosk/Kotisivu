@@ -21,6 +21,9 @@ const YOopinnot = () => {
           </div>
         )}
       </div>
+      <div style={style.kuvapalkki}>
+        <img src="https://www.dropbox.com/s/iwxg40zr87w3vcf/vihta2.JPG?raw=1" style={style.kuvaKoivuAsetin} alt="vihta" />
+      </div>
       <div style={{padding:10}}>
         <div style={style.otsikkoTeksti}>
           <PageText>Opinnot Helsingin Yliopiston Avoimessa Yliopistossa</PageText>

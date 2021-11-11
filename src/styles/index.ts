@@ -131,6 +131,25 @@ const style = {
     height: '100%',
     width: '100%',
     backgroundColor: colors.BackgroundImageFilter,
+  },
+
+  kuvapalkki : {
+    ...horizontal,
+    padding: 20,
+    alignItems: 'center',
+    justifyContents: 'center',
+  },
+
+  kuvaKoivuAsetin: {
+    width: '400px',
+  },
+
+  kuvaJaKuvausPalkki: {
+    ...horizontal,
+    alignItems: 'center',
+    justifyContents: 'center',
+    padding: 20,
+    width: '25%'
   }
   
 };
