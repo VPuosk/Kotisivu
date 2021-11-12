@@ -5,13 +5,19 @@ import { Route, Switch, useRouteMatch } from "react-router-dom";
 import MuutOpinnot from "./MuutOpinnot";
 import OmaSivu from "./OmaSivu";
 import LuontoKuvat from "./LuontoKuvat";
+import CVNavBarNarrow from "./CVNavBarNarrow";
 
-const CVPage = () => {
+interface CVPageProps {
+  narrow?: boolean,
+}
+
+const CVPage = ({narrow = false} : CVPageProps) => {
   const { path } = useRouteMatch();
 
   return (
     <div>
-      <CVNavBar />
+      {!narrow && <CVNavBar />}
+      {narrow && <CVNavBarNarrow />}
       <Switch>
         <Route exact path={path}>
           <OmaSivu />

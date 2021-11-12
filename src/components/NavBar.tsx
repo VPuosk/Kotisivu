@@ -6,17 +6,19 @@ import style from "../styles";
 const NavBar = () => {
 
   return (
-    <div style={style.navbar} >
-      <Link to="/CV">
-        <button style={style.navbarButton}>
-          <PageText style={style.navbarText}>Omat tiedot</PageText>
-        </button>
-      </Link>
-      <Link to="/">
-        <button style={style.navbarButton}>
-          <PageText style={style.navbarText}>Demoja</PageText>
-        </button>
-      </Link>
+    <div style={{display: 'flex'}}>
+      <div style={style.navbar} >
+        <Link to="/CV">
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Omat tiedot</PageText>
+          </button>
+        </Link>
+        <Link to="/">
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Demoja</PageText>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

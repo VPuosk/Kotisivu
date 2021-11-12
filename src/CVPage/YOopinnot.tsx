@@ -20,6 +20,9 @@ const YOopinnot = () => {
             <PageText>{osio}</PageText>
           </div>
         )}
+        <div style={style.tekstiLaatikko}>
+          <PageText><a href="http://urn.fi/URN:NBN:fi-fe2016120730405">Pro Gradu: Koivu elintarvikkeena ja koivunsilmu-uutteen analysointi</a></PageText>
+        </div>
       </div>
       <div style={style.kuvapalkki}>
         <img src="https://www.dropbox.com/s/iwxg40zr87w3vcf/vihta2.JPG?raw=1" style={style.kuvaKoivuAsetin} alt="vihta" />

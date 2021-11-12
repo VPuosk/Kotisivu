@@ -49,9 +49,22 @@ const style = {
 
   navbar: {
     ...vertical,
+    flexGrow: 0,
     padding:10,
-    width: '700px',
-    borderRadius: '5% / 50%',
+    //width: '700px',
+    borderRadius: '25px',
+    borderStyle: 'solid',
+    borderColor: 'rgb(100,100,255)',
+    background: 'rgba(220,220,255,0.65)'
+    //backgroundImage: "linear-gradient(to right, rgba(220,220,255,1) 50%, rgba(20,20,155,0))",
+  },
+
+  navcolumn: {
+    ...horizontal,
+    flexGrow: 0,
+    padding:10,
+    //width: '700px',
+    borderRadius: '25px',
     borderStyle: 'solid',
     borderColor: 'rgb(100,100,255)',
     background: 'rgba(220,220,255,0.65)'
@@ -77,6 +90,7 @@ const style = {
     paddingLeft: 40,
     width: '650px',
     borderStyle: 'solid',
+    borderRadius: '15px',
     borderColor: colors.CVBorderColor,
     background: colors.CVBackgroundColor,
   },
@@ -109,6 +123,7 @@ const style = {
   tekstiLaatikko: {
     padding: 20,
     margin:10,
+    maxWidth: '800px',
     background: colors.TekstilaatikonTausta,
   },
 

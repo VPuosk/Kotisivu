@@ -5,10 +5,10 @@ import { PageText } from "../components/generic/PageText";
 
 import pdffillet from '../static/CV_Vesa_Puoskari_2021_uusi.pdf';
 
-const CVNavBar = () => {
+const CVNavBarNarrow = () => {
   return (
-    <div style={{marginTop:10, display: 'flex'}}>
-      <div style={style.navbar} >
+    <div style={{marginTop:10, display:'flex'}}>
+      <div style={style.navcolumn} >
         <Link to="/CV">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Minä</PageText>
@@ -39,4 +39,4 @@ const CVNavBar = () => {
   )
 }
 
-export default CVNavBar
+export default CVNavBarNarrow
