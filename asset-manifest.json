@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kotisivut/static/css/main.e1b25e66.chunk.css",
+    "main.js": "/kotisivut/static/js/main.269398e0.chunk.js",
+    "main.js.map": "/kotisivut/static/js/main.269398e0.chunk.js.map",
+    "runtime-main.js": "/kotisivut/static/js/runtime-main.4dedd002.js",
+    "runtime-main.js.map": "/kotisivut/static/js/runtime-main.4dedd002.js.map",
+    "static/js/2.d501aad8.chunk.js": "/kotisivut/static/js/2.d501aad8.chunk.js",
+    "static/js/2.d501aad8.chunk.js.map": "/kotisivut/static/js/2.d501aad8.chunk.js.map",
+    "index.html": "/kotisivut/index.html",
+    "static/css/main.e1b25e66.chunk.css.map": "/kotisivut/static/css/main.e1b25e66.chunk.css.map",
+    "static/js/2.d501aad8.chunk.js.LICENSE.txt": "/kotisivut/static/js/2.d501aad8.chunk.js.LICENSE.txt",
+    "static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf": "/kotisivut/static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4dedd002.js",
+    "static/js/2.d501aad8.chunk.js",
+    "static/css/main.e1b25e66.chunk.css",
+    "static/js/main.269398e0.chunk.js"
+  ]
+}
