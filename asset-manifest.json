@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Kotisivu/static/css/main.e1b25e66.chunk.css",
-    "main.js": "/Kotisivu/static/js/main.269398e0.chunk.js",
-    "main.js.map": "/Kotisivu/static/js/main.269398e0.chunk.js.map",
+    "main.js": "/Kotisivu/static/js/main.83ebc07c.chunk.js",
+    "main.js.map": "/Kotisivu/static/js/main.83ebc07c.chunk.js.map",
     "runtime-main.js": "/Kotisivu/static/js/runtime-main.7d348422.js",
     "runtime-main.js.map": "/Kotisivu/static/js/runtime-main.7d348422.js.map",
     "static/js/2.d501aad8.chunk.js": "/Kotisivu/static/js/2.d501aad8.chunk.js",
@@ -10,12 +10,13 @@
     "index.html": "/Kotisivu/index.html",
     "static/css/main.e1b25e66.chunk.css.map": "/Kotisivu/static/css/main.e1b25e66.chunk.css.map",
     "static/js/2.d501aad8.chunk.js.LICENSE.txt": "/Kotisivu/static/js/2.d501aad8.chunk.js.LICENSE.txt",
-    "static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf": "/Kotisivu/static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf"
+    "static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf": "/Kotisivu/static/media/CV_Vesa_Puoskari_2021_uusi.9afa105c.pdf",
+    "static/media/Ruissalo_06m.f42e6399.jpg": "/Kotisivu/static/media/Ruissalo_06m.f42e6399.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7d348422.js",
     "static/js/2.d501aad8.chunk.js",
     "static/css/main.e1b25e66.chunk.css",
-    "static/js/main.269398e0.chunk.js"
+    "static/js/main.83ebc07c.chunk.js"
   ]
 }
