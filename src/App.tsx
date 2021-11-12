@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive'
 
 function App() {
   const narrow : boolean = useMediaQuery({maxWidth: 799})
-  console.log('minWidth: 800',narrow)
+  //console.log('minWidth: 800',narrow)
 
   return (
     <BrowserRouter>

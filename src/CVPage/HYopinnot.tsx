@@ -34,7 +34,7 @@ export const opinnot = [
   {
     id: 'C05',
     kurssi: "Tietokoneen toiminnan jatkokurssi",
-    kieli: "Konekieli - TTK-91",
+    kieli: "TTK-91",
     laajuus: 3,
     suoritusaika: "2020-09-02"
   },
@@ -245,9 +245,9 @@ const Opinto = ({ kurssinTiedot }: KurssiPropsi) => {
   return (
     <>
       <PageText style={{ width: "60%" }}>{kurssinTiedot.kurssi}</PageText>
-      <PageText style={{ width: "15%" }}>{kurssinTiedot.kieli}</PageText>
-      <PageText style={{ width: "5%" }}>{kurssinTiedot.laajuus}</PageText>
-      <PageText style={{ width: "20%" }}>{kurssinTiedot.suoritusaika}</PageText>
+      <PageText style={{ minWidth: "90px" }}>{kurssinTiedot.kieli}</PageText>
+      <PageText style={{ minWidth: "40px" }}>{kurssinTiedot.laajuus}</PageText>
+      <PageText style={{ minWidth: "100px" }}>{kurssinTiedot.suoritusaika}</PageText>
     </>
   )
 }
@@ -257,12 +257,22 @@ const HYopinnot = () => {
     <div style={style.CVlist}>
       <div style={style.CVitemHeader}>
         <PageText style={{ width: "60%" }}>Kurssi</PageText>
-        <PageText style={{ width: "15%" }}>Kieli</PageText>
-        <PageText style={{ width: "5%" }}>OP</PageText>
-        <PageText style={{ width: "20%" }}>Suoritettu</PageText>
+        <PageText style={{ minWidth: "90px" }}>Kieli</PageText>
+        <PageText style={{ minWidth: "40px" }}>OP</PageText>
+        <PageText style={{ minWidth: "100px" }}>Suoritettu</PageText>
       </div>
       <hr style={style.CVHR}  />
-      {opinnot.map(kurssi =>
+      {opinnot
+        .sort((a, b) => {
+          if (a.suoritusaika < b.suoritusaika) {
+            return -1;
+          }
+          if (a.suoritusaika > b.suoritusaika) {
+            return 1;
+          }
+          return 0;
+        })
+        .map(kurssi =>
         <div key={kurssi.id} style={style.CVitemBar}>
           <Opinto kurssinTiedot={kurssi} />
         </div>

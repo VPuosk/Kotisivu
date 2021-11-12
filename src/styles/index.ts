@@ -1,5 +1,6 @@
 import { vertical, horizontal } from "./shapes";
 import { colors } from "./colors";
+import taustakuva from '../static/Ruissalo_06m.jpg';
 
 const style = {
   colors: {
@@ -88,7 +89,7 @@ const style = {
     ...horizontal,
     margin: 3,
     paddingLeft: 40,
-    width: '650px',
+    //width: '650px',
     borderStyle: 'solid',
     borderRadius: '15px',
     borderColor: colors.CVBorderColor,
@@ -134,7 +135,7 @@ const style = {
   },
 
   backgroundImage: {
-    backgroundImage: `url(/Ruissalo_06m.jpg)`,
+    backgroundImage: `url(${taustakuva})`,
     //height: '100vh',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',

@@ -102,12 +102,12 @@ const Opinto = ({ opinnonTiedot }: OpintoPropsi) => {
     <>
       <div style={style.muutOhjelmointiPalkki}>
         <div style={style.muutOhjelmointiRivi}>
-          <PageText style={{ width: "15%" }}>{opinnonTiedot.kieli}</PageText>
-          <PageText style={{ width: "85%" }}>{opinnonTiedot.nimi}</PageText>
+          <PageText style={{ width: "100px" }}>{opinnonTiedot.kieli}</PageText>
+          <PageText style={{ minWidth: "100px" }}>{opinnonTiedot.nimi}</PageText>
         </div>
         <div style={style.muutOhjelmointiRivi}>
-          <span style={{ width: "15%"}}/>
-          <PageText style={{ width: "85%" }}>{opinnonTiedot.tarkennus}</PageText>
+          <span style={{ width: "100px"}}/>
+          <PageText style={{ minWidth: "100px" }}>{opinnonTiedot.tarkennus}</PageText>
         </div>
       </div>
     </>
@@ -123,8 +123,8 @@ const FSmodi = ({ modiTiedot }: FSPropsi) => {
           <PageText style={{ width: "50%" }}>{modiTiedot.perustuu}</PageText>
         </div>
         <div style={style.muutOhjelmointiRivi}>
-          <span style={{ width: "15%"}}/>
-          <a style={{ width: "85%" }} href={modiTiedot.linkki}> 
+          <span style={{ width: "20px"}}/>
+          <a href={modiTiedot.linkki}> 
             <PageText >{modiTiedot.linkki}</PageText>
           </a>
         </div>
@@ -142,8 +142,8 @@ const MuutOpinnot = () => {
         </div>
         <div style={style.CVlist}>
           <div style={style.CVitemHeader}>
-            <PageText style={{ width: "15%" }}>Kieli</PageText>
-            <PageText style={{ width: "85%" }}>Kuvaus</PageText>
+            <PageText style={{ width: "100px" }}>Kieli</PageText>
+            <PageText style={{ minWidth: "100px" }}>Kuvaus</PageText>
           </div>
           <hr style={style.CVHR}  />
           {opinnotCB.map(opinto =>
@@ -159,8 +159,8 @@ const MuutOpinnot = () => {
         </div>
         <div style={style.CVlist}>
           <div style={style.CVitemHeader}>
-            <PageText style={{ width: "15%" }}>Kieli</PageText>
-            <PageText style={{ width: "85%" }}>Kuvaus</PageText>
+            <PageText style={{ width: "100px" }}>Kieli</PageText>
+            <PageText style={{ minWidth: "100px" }}>Kuvaus</PageText>
           </div>
           <hr style={style.CVHR}  />
           {ohjelmoinnit.map(opinto =>
