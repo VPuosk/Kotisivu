@@ -8,12 +8,17 @@ const NavBar = () => {
   return (
     <div style={{display: 'flex'}}>
       <div style={style.navbar} >
+        <Link to="/">
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Etusivu</PageText>
+          </button>
+        </Link>
         <Link to="/CV">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Omat tiedot</PageText>
           </button>
         </Link>
-        <Link to="/">
+        <Link to="/Demo">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Demoja</PageText>
           </button>

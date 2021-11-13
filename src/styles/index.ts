@@ -141,6 +141,7 @@ const style = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
+    flexGrow: 1,
   },
 
   backgroundFilter: {

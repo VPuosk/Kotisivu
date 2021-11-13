@@ -3,6 +3,8 @@ import NavBar from './components/NavBar';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import CVPage from './CVPage';
 import { useMediaQuery } from 'react-responsive'
+import Demo from './Demo';
+import EtuSivu from './components/EtuSivu';
 
 function App() {
   const narrow : boolean = useMediaQuery({maxWidth: 799})
@@ -16,8 +18,11 @@ function App() {
           <Route path="/CV">
             <CVPage narrow={narrow} />
           </Route>
+          <Route path="/Demo">
+            <Demo />
+          </Route>
           <Route path="/">
-            TEST AA
+            <EtuSivu />
           </Route>
         </Switch>
       </div>
