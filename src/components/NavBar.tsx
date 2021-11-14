@@ -2,6 +2,7 @@ import React from "react";
 import { PageText } from "./generic/PageText";
 import { Link } from "react-router-dom";
 import style from "../styles";
+import DarkMode from "./DarkMode";
 
 const NavBar = () => {
 
@@ -23,6 +24,7 @@ const NavBar = () => {
             <PageText style={style.navbarText}>Demoja</PageText>
           </button>
         </Link>
+        <DarkMode />
       </div>
     </div>
   );

@@ -76,7 +76,7 @@ const style = {
     padding: 2,
     margin: 5,
     width: '120px', // jotta tuo borderRadius toimisi oikein...
-    background: 'rgba(200,200,255,0.95)',
+    background: 'var(--navigaatioNapinTausta)',
     borderRadius: '10% / 50%'
   },
 
@@ -147,7 +147,8 @@ const style = {
   backgroundFilter: {
     height: '100%',
     width: '100%',
-    backgroundColor: colors.BackgroundImageFilter,
+    backgroundColor: 'var(--taustaFiltteri)'
+    //backgroundColor: colors.BackgroundImageFilter,
   },
 
   kuvapalkki : {

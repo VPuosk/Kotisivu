@@ -7,7 +7,8 @@ interface Props{
 }
 
 export const PageText = ({className, style, children} : Props) => {
+    const newStyle = {...style, color: 'var(--color-foreground)'}
     return (
-       <span style={style} className={className}>{children}</span>
+       <span style={newStyle} className={className}>{children}</span>
     )
 }

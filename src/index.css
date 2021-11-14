@@ -26,6 +26,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 100%;
   height: 100%;
+
+  --color-background: #FAFAFA;
+  --color-foreground: #1F2023;
+  --taustaFiltteri: rgba(255,240,250,0.50);
+  --navigaatioNapinTausta: rgba(200,200,255,0.95);
+}
+
+body.dark {
+    --color-background: #1F2023;
+    --color-foreground: #EFEFEF;
+    --taustaFiltteri: rgba(20,10,20,0.8);
+    --navigaatioNapinTausta: rgba(50,50,80,0.95);
 }
 
 code {
