@@ -1,6 +1,6 @@
 import { GraphNode } from "./GraphComponents"
 
-class GraphNodeHeap {
+export class GraphNodeHeap {
   node: GraphNode;
   comparator: number;
 
