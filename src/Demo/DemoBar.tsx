@@ -12,6 +12,11 @@ const DemoBar = () => {
             <PageText style={style.navbarText}>Yleistä</PageText>
           </ button>
         </Link>
+        <Link to="/Demo/Rivilasku">
+          <button style={style.navbarButton}>
+            <PageText style={style.navbarText}>Rivilasku</PageText>
+          </button>
+        </Link>
         <Link to="/Demo/BFS">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>BFS</PageText>

@@ -1,4 +1,4 @@
-import React, { MouseEvent, ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import { GraphEdge, GraphNode } from "../components/GraphComponents";
 import { Heap } from "../components/Heap";
 
@@ -58,7 +58,7 @@ const BFSForm = ({ keko } : FormProp ) => {
     console.log(splitstr)
   }
 
-  const handleClearing = (event : MouseEvent<HTMLButtonElement>) => {
+  const handleClearing = () => {
     //event.preventDefault()
     setFormData('')
     setNodes([])

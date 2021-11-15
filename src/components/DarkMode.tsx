@@ -1,11 +1,11 @@
-import React, { useState, MouseEvent, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import style from "../styles"
 import { PageText } from "./generic/PageText"
 
 const DarkMode = () => {
   const [tummaTila, asetaTummaTila] = useState<boolean>(false)
 
-  const changeTheme = (event : MouseEvent<HTMLButtonElement>) => {
+  const changeTheme = () => {
     if (tummaTila) {
       asetaTummaTila(false)
     } else {

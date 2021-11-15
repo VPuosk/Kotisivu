@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import DemoBar from "./DemoBar";
 import BFS from "./BFS";
+import Rivilaskuri from "./Rivilaskuri";
 
 const Demo = () => {
   const { path } = useRouteMatch();
@@ -15,6 +16,9 @@ const Demo = () => {
         </Route>
         <Route path={`${path}/BFS`}>
           <BFS />
+        </Route>
+        <Route path={`${path}/Rivilasku`}>
+          <Rivilaskuri />
         </Route>
       </Switch>
     </div>

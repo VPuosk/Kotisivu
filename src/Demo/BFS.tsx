@@ -1,22 +1,7 @@
 import React from "react";
-import { Heap, GraphNodeHeap } from "../components/Heap";
+import { Heap } from "../components/Heap";
 import { GraphEdge, GraphNode } from "../components/GraphComponents";
 import BFSForm from "./BFSForm";
-
-// static data testing
-const getGraphTestData = () : Heap => {
-  const heap = new Heap();
-  const nodeA = new GraphNode('a');
-  const nodeB = new GraphNode('b');
-  const nodeC = new GraphNode('c');
-  console.log('heap init',heap)
-  heap.addGraphNode(nodeA,15)
-  heap.addGraphNode(nodeB,10)
-  heap.addGraphNode(nodeC,5)
-  console.log('heap ready', heap)
-  
-  return heap
-}
 
 // static data startpoint
 const startNode = new GraphNode('start')
