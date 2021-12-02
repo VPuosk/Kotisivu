@@ -4,20 +4,21 @@ import style from "../styles";
 import { PageText } from "../components/generic/PageText";
 
 const DemoBar = () => {
+  const path = "/Kotisivu/Demo"
   return (
     <div style={{marginTop:10, display: 'flex'}}>
       <div style={style.navbar} >
-        <Link to="/Demo">
+        <Link to={`${path}`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Yleistä</PageText>
           </ button>
         </Link>
-        <Link to="/Demo/Rivilasku">
+        <Link to={`${path}/Rivilasku`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Rivilasku</PageText>
           </button>
         </Link>
-        <Link to="/Demo/BFS">
+        <Link to={`${path}/BFS`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>BFS</PageText>
           </button>

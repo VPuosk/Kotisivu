@@ -18,7 +18,7 @@ export class Heap {
   nodes: GraphNodeHeap[];
 
   constructor() {
-    //inserting dummy node to index 0 to simply the math
+    //inserting dummy node to index 0 to simplify the math
     this.nodes = [defaultGNNode];
     this.length = 0;
   }

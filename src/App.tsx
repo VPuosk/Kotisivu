@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import CVPage from './CVPage';
 import { useMediaQuery } from 'react-responsive'
 import Demo from './Demo';
@@ -15,14 +15,17 @@ function App() {
       <div className="App" style={{padding: 10}}>
         <NavBar />
         <Switch>
-          <Route path="/CV">
+          <Route path="/Kotisivu/CV">
             <CVPage narrow={narrow} />
           </Route>
-          <Route path="/Demo">
+          <Route path="/Kotisivu/Demo">
             <Demo />
           </Route>
-          <Route path="/">
+          <Route path="/Kotisivu">
             <EtuSivu />
+          </Route>
+          <Route path="/">
+            <Redirect to="/Kotisivu" />
           </Route>
         </Switch>
       </div>

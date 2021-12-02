@@ -9,17 +9,17 @@ const NavBar = () => {
   return (
     <div style={{display: 'flex'}}>
       <div style={style.navbar} >
-        <Link to="/">
+        <Link to="/Kotisivu">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Etusivu</PageText>
           </button>
         </Link>
-        <Link to="/CV">
+        <Link to="/Kotisivu/CV">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Omat tiedot</PageText>
           </button>
         </Link>
-        <Link to="/Demo">
+        <Link to="/Kotisivu/Demo">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Demoja</PageText>
           </button>

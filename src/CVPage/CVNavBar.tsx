@@ -6,10 +6,11 @@ import { PageText } from "../components/generic/PageText";
 import pdffillet from '../static/CV_Vesa_Puoskari_2021_uusi.pdf';
 
 const CVNavBar = () => {
+  const path = "/Kotisivu/CV"
   return (
     <div style={{marginTop:10, display: 'flex'}}>
       <div style={style.navbar} >
-        <Link to="/CV">
+        <Link to={`${path}`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Minä</PageText>
           </ button>
@@ -19,17 +20,17 @@ const CVNavBar = () => {
             <PageText style={style.navbarText}>CV - pdf</PageText>
           </button>
         </a>
-        <Link to="/CV/HY">
+        <Link to={`${path}/HY`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Opintoja</PageText>
           </button>
         </Link>
-        <Link to="/CV/Muut">
+        <Link to={`${path}/Muut`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Ohjelmointia</PageText>
           </button>
         </Link>
-        <Link to="/CV/Kuvat">
+        <Link to={`${path}/Kuvat`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Kuvia</PageText>
           </button>
