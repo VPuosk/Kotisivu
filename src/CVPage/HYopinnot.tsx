@@ -227,6 +227,13 @@ export const opinnot = [
     laajuus: 3,
     suoritusaika: "2021-04-10"
   },
+  {
+    id: 'C33',
+    kurssi: "Full Stack -websovelluskehitys: relaatiotietokannat",
+    kieli: "JavaScript",
+    laajuus: 1,
+    suoritusaika: "2021-11-29"
+  },
 ]
 
 type Kurssitiedot = {
