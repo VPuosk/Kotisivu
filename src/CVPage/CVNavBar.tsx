@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import style from "../styles";
 import { PageText } from "../components/generic/PageText";
 
-import pdffillet from '../static/CV_Vesa_Puoskari_2021_uusi.pdf';
+import pdffillet from "../static/CV_Vesa_Puoskari_2021_uusi.pdf";
 
 const CVNavBar = () => {
-  const path = "/Kotisivu/CV"
+  const path = "/Kotisivu/CV";
   return (
-    <div style={{marginTop:10, display: 'flex'}}>
-      <div style={style.navbar} >
+    <div style={{ marginTop: 10, display: "flex" }}>
+      <div style={style.navbar}>
         <Link to={`${path}`}>
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Minä</PageText>
-          </ button>
+          </button>
         </Link>
         <a href={pdffillet} rel="noopener noreferrer" target="_blank">
           <button style={style.navbarButton}>
@@ -22,12 +22,12 @@ const CVNavBar = () => {
         </a>
         <Link to={`${path}/HY`}>
           <button style={style.navbarButton}>
-            <PageText style={style.navbarText}>Opintoja</PageText>
+            <PageText style={style.navbarText}>Opintoja YO</PageText>
           </button>
         </Link>
         <Link to={`${path}/Muut`}>
           <button style={style.navbarButton}>
-            <PageText style={style.navbarText}>Ohjelmointia</PageText>
+            <PageText style={style.navbarText}>Muita Op.</PageText>
           </button>
         </Link>
         <Link to={`${path}/Kuvat`}>
@@ -37,7 +37,7 @@ const CVNavBar = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CVNavBar
+export default CVNavBar;

@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import style from "../styles";
 import { PageText } from "../components/generic/PageText";
 
-import pdffillet from '../static/CV_Vesa_Puoskari_2021_uusi.pdf';
+import pdffillet from "../static/CV_Vesa_Puoskari_2021_uusi.pdf";
 
 const CVNavBarNarrow = () => {
   return (
-    <div style={{marginTop:10, display:'flex'}}>
-      <div style={style.navcolumn} >
+    <div style={{ marginTop: 10, display: "flex" }}>
+      <div style={style.navcolumn}>
         <Link to="/CV">
           <button style={style.navbarButton}>
             <PageText style={style.navbarText}>Minä</PageText>
-          </ button>
+          </button>
         </Link>
         <a href={pdffillet} rel="noopener noreferrer" target="_blank">
           <button style={style.navbarButton}>
@@ -21,12 +21,12 @@ const CVNavBarNarrow = () => {
         </a>
         <Link to="/CV/HY">
           <button style={style.navbarButton}>
-            <PageText style={style.navbarText}>Opintoja</PageText>
+            <PageText style={style.navbarText}>Opintoja YO</PageText>
           </button>
         </Link>
         <Link to="/CV/Muut">
           <button style={style.navbarButton}>
-            <PageText style={style.navbarText}>Ohjelmointia</PageText>
+            <PageText style={style.navbarText}>Muita Op.</PageText>
           </button>
         </Link>
         <Link to="/CV/Kuvat">
@@ -36,7 +36,7 @@ const CVNavBarNarrow = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CVNavBarNarrow
+export default CVNavBarNarrow;
