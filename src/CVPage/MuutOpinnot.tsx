@@ -202,7 +202,7 @@ const UdemyKurssi = ({ kurssiTiedot }: IUdemyKurssi) => {
           <PageText style={{ width: "50px" }}>{kurssiTiedot.pituus}</PageText>
           <PageText style={{ minWidth: "100px" }}>
             <a href={`https://${kurssiTiedot.tunniste}`}>
-              Link to course certificate
+              Linkki sertifikaattiin.
             </a>
           </PageText>
         </div>
