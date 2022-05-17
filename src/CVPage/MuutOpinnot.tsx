@@ -201,7 +201,11 @@ const UdemyKurssi = ({ kurssiTiedot }: IUdemyKurssi) => {
           <span style={{ width: "100px" }} />
           <PageText style={{ width: "50px" }}>{kurssiTiedot.pituus}</PageText>
           <PageText style={{ minWidth: "100px" }}>
-            <a href={`https://${kurssiTiedot.tunniste}`}>
+            <a
+              href={`https://${kurssiTiedot.tunniste}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               Linkki sertifikaattiin.
             </a>
           </PageText>
