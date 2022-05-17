@@ -146,6 +146,13 @@ const udemyKurssit = [
     tunniste: "ude.my/UC-ce066d1e-c7e3-4517-a5d1-988fb25eee04",
     pituus: "3 h",
   },
+  {
+    id: "udemy11",
+    nimi: "HTML&CSS Tutorial and Projects Course 2022 (Flexbox&Grid)",
+    kieli: "HTML & CSS",
+    tunniste: "ude.my/UC-de32166f-2d3f-4367-ba39-abb502944523",
+    pituus: "40 h",
+  },
 ];
 
 type Udemy = {
@@ -194,7 +201,9 @@ const UdemyKurssi = ({ kurssiTiedot }: IUdemyKurssi) => {
           <span style={{ width: "100px" }} />
           <PageText style={{ width: "50px" }}>{kurssiTiedot.pituus}</PageText>
           <PageText style={{ minWidth: "100px" }}>
-            {kurssiTiedot.tunniste}
+            <a href={`https://${kurssiTiedot.tunniste}`}>
+              Link to course certificate
+            </a>
           </PageText>
         </div>
       </div>
